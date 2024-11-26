@@ -1,9 +1,11 @@
-import { Button } from "@/components/ui/button";
+import FeaturedProducts from "@/components/home/FeaturedProducts";
+import Hero from "@/components/home/Hero";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div>
-      <Button>Click me</Button>
+      <Hero />
+      <FeaturedProducts />
     </div>
   );
 }
