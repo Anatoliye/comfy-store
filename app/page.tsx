@@ -1,4 +1,12 @@
+import FeaturedProducts from "@/components/home/FeaturedProducts";
+import Hero from "@/components/home/Hero";
+
 function HomePage() {
-  return <h1 className="text-3xl text-muted-foreground">HomePage</h1>;
+  return (
+    <div>
+      <Hero />
+      <FeaturedProducts />
+    </div>
+  );
 }
 export default HomePage;
