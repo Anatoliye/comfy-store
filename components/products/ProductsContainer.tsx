@@ -1,6 +1,6 @@
 import ProductsGrid from "./ProductsGrid";
 import ProductsList from "./ProductsList";
-import { LuLayoutGrid } from "react-icons/lu";
+import { LuLayoutGrid, LuList } from "react-icons/lu";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { fetchAllProducts } from "@/utils/actions";
@@ -39,7 +39,7 @@ async function ProductsContainer({
               asChild
             >
               <Link href={`/products?layout=list${searchTerm}`}>
-                <LuLayoutGrid />
+                <LuList />
               </Link>
             </Button>
           </div>
