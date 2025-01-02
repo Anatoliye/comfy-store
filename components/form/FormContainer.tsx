@@ -2,9 +2,8 @@
 
 import { useFormState } from "react-dom";
 import { useEffect } from "react";
-useToast;
-import { actionFunction } from "@/utils/types";
 import { useToast } from "@/hooks/use-toast";
+import { actionFunction } from "@/utils/types";
 
 const initialState = {
   message: "",
@@ -26,5 +25,4 @@ function FormContainer({
   }, [state]);
   return <form action={formAction}>{children}</form>;
 }
-
 export default FormContainer;
