@@ -57,6 +57,11 @@ The project is built using the following technologies:
 - **Payment Processing**: [Stripe](https://stripe.com/)
 - **State Management and UI Components**: Various packages including **Radix UI** and **Tailwind CSS** for styling.
 
+## **Challenges and Learnings**
+
+- Implementing Stripe payments taught me how to manage secure payment gateways.
+- Integrating Clerk for multi-provider authentication was a great learning experience in handling user roles and permissions.
+
 ## Project Setup
 
 To run the project locally, follow these steps:
@@ -65,23 +70,16 @@ To run the project locally, follow these steps:
 
 To copy the project from GitHub to your local machine, open your terminal and run the following command:
 
-```bash
 git clone https://github.com/yourusername/comfy-store.git
 Make sure to replace yourusername with the actual username of the repository owner on GitHub.
 
 2. Navigate to the Project Directory
-Change to the project directory:
+   Change to the project directory:
 
-bash
-
-cd comfy-store
-3. Install Dependencies
+cd comfy-store 3. Install Dependencies
 Install the necessary dependencies using npm:
 
-bash
-
-npm install
-4. Set Up Environment Variables
+npm install 4. Set Up Environment Variables
 Create a .env.local file in the root of the project and add your environment variables. You will need to set your Stripe keys and Clerk API keys. Example:
 
 plaintext
@@ -92,21 +90,13 @@ CLERK_API_KEY=your_clerk_api_key
 Make sure to replace the placeholders with your actual credentials.
 
 5. Run the Application
-To start the application in development mode, run:
+   To start the application in development mode, run:
 
-bash
-
-npm run dev
-6. Build for Production (Optional)
+npm run dev 6. Build for Production (Optional)
 If you wish to build the application for production, run:
 
-bash
-
-npm run build
-7. Start the Production Server (Optional)
+npm run build 7. Start the Production Server (Optional)
 To start the application in production mode, run:
-
-bash
 
 npm run start
 Scripts
@@ -127,5 +117,5 @@ zod: For input validation during product creation.
 Conclusion
 The Comfy Store project delivers a robust e-commerce experience for both customers and administrators. With its user-friendly interface and powerful backend capabilities, it is designed to provide an effective online shopping solution. Whether you're browsing as a guest or managing products as an admin, Comfy Store aims to meet the needs of all users in the ever-growing world of online retail.
 
-For further inquiries or contributions, please reach out or check the project repository.
-```
+Live Demo Link: ## **Live Demo**
+https://comfy-store-six-sandy.vercel.app
