@@ -45,7 +45,6 @@ export const POST = async (req: NextRequest) => {
       },
     };
   });
-
   try {
     const session = await stripe.checkout.sessions.create({
       ui_mode: "embedded",
@@ -54,9 +53,11 @@ export const POST = async (req: NextRequest) => {
       mode: "payment",
       return_url: `${origin}/api/confirm?session_id={CHECKOUT_SESSION_ID}`,
     });
+
     return Response.json({ clientSecret: session.client_secret });
   } catch (error) {
     console.log(error);
+
     return Response.json(null, {
       status: 500,
       statusText: "Internal Server Error",
